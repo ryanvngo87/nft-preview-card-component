@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&display=swap");
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  background-color: hsl(216, 50%, 16%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15rem;
+  padding: 1.5rem;
+  border-radius: 30px;
+  border: 15px solid hsl(216, 54%, 10%);
+  box-shadow: 0 30px 10px 0 rgba(6, 6, 6, 0.1);
+}
+
+h2 {
+  color: white;
+  margin-bottom: -0.05rem;
+}
+
+p {
+  font-size: 18px;
+}
+
+.eth {
+  position: relative;
+  border-radius: 15px;
+}
+
+.eth-view {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 55%);
+  top: 25px;
+  width: 350px;
+  height: 350px;
+  z-index: 999;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.eth-view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.eth-view img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+  margin-bottom: -0.1rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-label {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time-label {
+  margin-left: 0.5rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.price-time {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid hsl(213, 24%, 35%);
+}
+
+.price {
+  margin-right: auto;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+  margin-right: 1rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.attribution {
+  margin-top: 20rem;
+  color: white;
+}
+
+h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+span {
+  color: white;
+}
+
+.container .author p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
